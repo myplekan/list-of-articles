@@ -1,0 +1,27 @@
+@import '../../styles/mixins';
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @include onDesktop {
+    max-width: 314px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}

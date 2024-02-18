@@ -1,0 +1,29 @@
+@import "../../styles/mixins";
+
+
+.article-list {
+  min-height: calc(100vh - 71px - 100px);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin: 0 auto;
+    align-items: stretch;
+    max-width: 280px;
+
+    @include onTablet {
+      max-width: 576px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    @include onDesktop {
+      max-width: 992px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+

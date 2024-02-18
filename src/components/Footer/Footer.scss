@@ -1,0 +1,60 @@
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      width: 140px;
+      border-radius: 50px;
+      transition-duration: 0.3s;
+      background-color: rgb(181, 160, 255);
+      align-items: center;
+    }
+
+    &:hover .footer__svgIcon {
+      transition-duration: 0.3s;
+      transform: translateY(-200%);
+    }
+
+    &::before {
+      position: absolute;
+      bottom: -20px;
+      content: "Back to Top";
+      color: white;
+      font-size: 0px;
+    }
+
+    &:hover::before {
+      font-size: 13px;
+      opacity: 1;
+      bottom: unset;
+      transition-duration: 0.3s;
+    }
+  }
+
+  &__svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+
+    & path {
+      fill: white;
+    }
+  }
+}

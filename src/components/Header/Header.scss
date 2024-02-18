@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__nav-link {
+    color: black;
+    padding: 20px 0;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 300ms;
+
+    &:hover {
+      color: gray;
+    }
+  }
+
+  &__nav--is-active {
+    color: gray;
+    border-bottom: 3px solid gray;
+  }
+}
