@@ -10,7 +10,7 @@ type Props = {
   article: ArticleData;
 };
 
-export const ActicleItem: React.FC<Props> = ({ article }) => {
+export const ArticleItem: React.FC<Props> = ({ article }) => {
   const { urlToImage, author, description, title, publishedAt } = article;
 
   const dispatch = useAppDispatch();

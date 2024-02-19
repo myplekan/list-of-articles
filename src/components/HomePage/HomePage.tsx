@@ -1,5 +1,5 @@
 import { useAppSelector } from "../../hooks/hooks";
-import { ActicleItem } from "../ActicleItem/ActicleItem";
+import { ActicleItem } from "../ArticleItem/ActicleItem";
 
 import "./HomePage.scss";
 

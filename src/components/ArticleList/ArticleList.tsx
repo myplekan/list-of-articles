@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { ActicleItem } from "../ActicleItem/ActicleItem";
+import { ArticleItem } from "../ArticleItem/ArticleItem";
 import { useAppDispatch, useAppSelector, useDebounce } from "../../hooks/hooks";
 
 import "./ArticleList.scss";
@@ -66,7 +66,7 @@ export const ArticleList = () => {
         <>
           <div className="article-list__container">
             {articles.articles.map((article) => (
-              <ActicleItem key={article.publishedAt} article={article} />
+              <ArticleItem key={article.publishedAt} article={article} />
             ))}
           </div>
 
